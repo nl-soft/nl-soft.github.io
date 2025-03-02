@@ -16,6 +16,78 @@
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            color: #005aa9;
+            font-size: 2.2em;
+            margin-bottom: 1.5em;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ff6b00;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .experience-block {
+            margin-bottom: 50px;
+        }
+
+        .experience-block h3 {
+            color: #005aa9;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-block h3 i {
+            color: #ff6b00;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .highlight {
+            color: #ff6b00;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #005aa9;
+            color: white !important;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #004080;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
@@ -55,12 +127,47 @@
   </header>
 
   <section id="about">
-       <div class="container">
-       
-        <h1>Наш опыт</h1>
-        
-          
+      <div class="container">
+        <h1 class="section-title">Наш опыт</h1>
+
+        <div class="experience-block">
+            <h3><i class="fas fa-code"></i>Полный цикл разработки</h3>
+            <p>Специализируемся на комплексном создании цифровых решений: от проектирования архитектуры до ввода в эксплуатацию. Используем современные технологии и методологии (Agile, DevOps) для создания:</p>
+            <ul>
+                <li>Корпоративных платформ</li>
+                <li>Геоинформационных сервисов</li>
+                <li>Портальных решений</li>
+            </ul>
+            <p>Каждый этап сопровождается строгим контролем качества с плавным переходом в продуктивную эксплуатацию.</p>
+        </div>
+
+        <div class="experience-block">
+            <h3><i class="fas fa-server"></i>Поддержка и развитие</h3>
+            <p>Гарантируем бесперебойную работу систем через:</p>
+            <ul>
+                <li>Интеграцию SRE/DevOps-практик</li>
+                <li>Автоматизацию процессов мониторинга</li>
+                <li>Аудит и оптимизацию производительности</li>
+            </ul>
+            <p>Аналитика пользовательского поведения помогает выявлять узкие места для точечных улучшений.</p>
+        </div>
+
+        <div class="experience-block">
+            <h3><i class="fas fa-chart-line"></i>Аналитика и консалтинг</h3>
+            <p>Преобразуем данные в стратегические решения с помощью:</p>
+            <ul>
+                <li>Аудита IT-систем</li>
+                <li>ML-моделей и BI-инструментов</li>
+            </ul>
+            <p>Консультируем по оптимизации бюджета и выбору технологического стека.</p>
+        </div>
+
+        <div class="experience-block">
+            <h3><i class="fas fa-handshake"></i>Партнёрство</h3>
+            <p><span class="highlight">80% клиентов возвращаются </span> с новыми задачами. Работаем как часть вашей команды, сочетая техническую экспертизу с бизнес-ориентированным подходом.</p>
+        </div>
     </div>
+
   </section>
 
 
