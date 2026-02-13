@@ -23,8 +23,8 @@
 
 /* Hero mark */
 .header-mark{
-  width: 76px;
-  height: 76px;
+  width: 64px;
+  height: 64px;
   margin-bottom: 12px;
 }
 
@@ -56,4 +56,13 @@ header {
 
 section {
   padding: 150px 0;
+}
+
+
+header.bg-primary{
+  background-color: var(--nl-bg) !important;
+  color: var(--nl-base) !important;
+}
+header .lead{
+  color: var(--nl-base) !important;
 }
