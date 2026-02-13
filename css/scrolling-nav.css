@@ -23,8 +23,8 @@
 
 /* Hero mark */
 .header-mark{
-  width: 64px;
-  height: 64px;
+  width: 192px;
+  height: 192px;
   margin-bottom: 12px;
 }
 
@@ -65,4 +65,25 @@ header.bg-primary{
 }
 header .lead{
   color: var(--nl-base) !important;
+}
+
+
+/* Header sizing */
+header.bg-primary{
+  padding: 28px 0 !important;
+}
+header .container.text-center{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+header .lead{
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px){
+  header.bg-primary{ padding: 20px 0 !important; }
+  .header-mark{ width: 152px; height: 152px; }
+  header .lead{ font-size: 1.15rem; }
 }
