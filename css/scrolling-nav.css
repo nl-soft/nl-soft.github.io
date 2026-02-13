@@ -4,6 +4,7 @@
   --nl-accent: #FF7A30;
   --nl-bg: #F7F7F7;
   --nl-text: #111;
+  --nl-gap: 28px;
 }
 
 /* Brand mark in navbar */
@@ -54,9 +55,6 @@ header {
   padding: 156px 0 100px;
 }
 
-section {
-  padding: 150px 0;
-}
 
 
 header.bg-primary{
@@ -86,4 +84,24 @@ header .lead{
   header.bg-primary{ padding: 20px 0 !important; }
   .header-mark{ width: 152px; height: 152px; }
   header .lead{ font-size: 1.15rem; }
+}
+
+
+
+/* Layout spacing (symmetry between navbar↔header and header↔content) */
+header.bg-primary{
+  margin-top: var(--nl-gap) !important;
+}
+header + section{
+  padding-top: var(--nl-gap) !important;
+}
+
+/* Default section rhythm (keep comfortable, but not oversized) */
+section{
+  padding: 96px 0;
+}
+
+@media (max-width: 575.98px){
+  :root{ --nl-gap: 18px; }
+  section{ padding: 72px 0; }
 }
