@@ -1,3 +1,50 @@
+
+:root{
+  --nl-base: #243447;
+  --nl-accent: #FF7A30;
+  --nl-bg: #F7F7F7;
+  --nl-text: #111;
+}
+
+/* Brand mark in navbar */
+.navbar .brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .brand-mark{
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+.navbar .brand-text{
+  line-height: 1;
+}
+
+/* Hero mark */
+.header-mark{
+  width: 76px;
+  height: 76px;
+  margin-bottom: 12px;
+}
+
+/* Theme overrides */
+body{ background: var(--nl-bg); color: var(--nl-text); }
+.bg-dark{ background-color: var(--nl-base) !important; }
+.bg-primary{ background-color: var(--nl-base) !important; }
+.text-white{ color: #fff !important; }
+
+a{ color: var(--nl-accent); }
+a:hover{ color: #e86a26; }
+
+/* Accent line used in experience page */
+.section-title:after{ background: var(--nl-accent) !important; }
+.highlight{ color: var(--nl-accent) !important; }
+
+@media (max-width: 991.98px){
+  .navbar .brand-text{ font-size: 0.95rem; }
+}
+
 /*!
  * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template/scrolling-nav)
  * Copyright 2013-2020 Start Bootstrap
